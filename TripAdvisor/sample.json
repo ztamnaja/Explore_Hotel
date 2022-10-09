@@ -1,0 +1,112 @@
+{
+  "_id": "littlebearshome",
+  "startUrl": [
+    "https://www.tripadvisor.com/Hotel_Review-g293917-d9595619-Reviews-Little_Bear_s_Home-Chiang_Mai.html#REVIEWS"
+  ],
+  "selectors": [
+    {
+      "id": "paginate",
+      "parentSelectors": [
+        "_root",
+        "paginate"
+      ],
+      "paginationType": "clickOnce",
+      "selector": "span.pageNum, a.pageNum",
+      "type": "SelectorPagination"
+    },
+    {
+      "id": "element",
+      "parentSelectors": [
+        "_root",
+        "paginate"
+      ],
+      "type": "SelectorElement",
+      "selector": "div.YibKl:nth-of-type(n+3)",
+      "multiple": true
+    },
+    {
+      "id": "more",
+      "parentSelectors": [
+        "element"
+      ],
+      "type": "SelectorElementClick",
+      "clickElementSelector": "span.caret-down",
+      "clickElementUniquenessType": "uniqueText",
+      "clickType": "clickOnce",
+      "delay": 2000,
+      "discardInitialElements": "do-not-discard",
+      "multiple": false,
+      "selector": "div.FKffI"
+    },
+    {
+      "id": "name",
+      "parentSelectors": [
+        "element"
+      ],
+      "type": "SelectorText",
+      "selector": "a.ui_header_link",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "origin",
+      "parentSelectors": [
+        "element"
+      ],
+      "type": "SelectorText",
+      "selector": "div.MziKN",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "topic",
+      "parentSelectors": [
+        "element"
+      ],
+      "type": "SelectorText",
+      "selector": ".Qwuub span span",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "review",
+      "parentSelectors": [
+        "element"
+      ],
+      "type": "SelectorText",
+      "selector": ".QewHA span",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "stay",
+      "parentSelectors": [
+        "element"
+      ],
+      "type": "SelectorText",
+      "selector": "span.teHYY",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "trip type",
+      "parentSelectors": [
+        "element"
+      ],
+      "type": "SelectorText",
+      "selector": "span.TDKzw",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "rate",
+      "parentSelectors": [
+        "element"
+      ],
+      "type": "SelectorElementAttribute",
+      "selector": "span.ui_bubble_rating",
+      "multiple": false,
+      "extractAttribute": "class"
+    }
+  ]
+}
