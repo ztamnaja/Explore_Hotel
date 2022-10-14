@@ -109,6 +109,16 @@
       "selector": "span.ui_bubble_rating",
       "multiple": false,
       "extractAttribute": "class"
+    },
+    {
+      "id": "review_date",
+      "parentSelectors": [
+        "element"
+      ],
+      "type": "SelectorText",
+      "selector": ".cRVSd span",
+      "multiple": false,
+      "regex": ""
     }
   ]
 }
